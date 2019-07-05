@@ -10,7 +10,7 @@ export class DateIntervalComponent {
     bindings: {
       dateFrom: "=",
       dateTo: "=",
-      onChange: "&"
+      onChange: "&mcChange"
     },
     templateUrl: "src/components/date-interval/date-interval.component.html",
     controller: class DateIntervalController {
