@@ -1,0 +1,65 @@
+<md-content>
+  <style>
+    .linkbutton {
+      background: none !important;
+      border: none;
+      padding: 2 !important;
+      font-size: 12px;
+      text-transform: none !important;
+      font-family: arial, sans-serif;
+      color: #069;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+  <section
+    layout="row"
+    layout-sm="column"
+    layout-align="start center"
+    layout-wrap=""
+  >
+    <div>
+      <p>c</p>
+      <md-datepicker
+        md-hide-icons="calendar"
+        ng-model="$ctrl.pickFrom"
+        ng-change="$ctrl.onDatesChanged()"
+        md-max-date="$ctrl.pickTo"
+        md-placeholder="дата начала"
+      ></md-datepicker>
+    </div>
+
+    <div>
+      <p>по</p>
+      <md-datepicker
+        md-hide-icons="calendar"
+        ng-model="$ctrl.pickTo"
+        ng-change="$ctrl.onDatesChanged()"
+        md-min-date="$ctrl.pickFrom"
+        md-placeholder="дата окончания"
+      ></md-datepicker>
+    </div>
+  </section>
+  <section
+    layout="row"
+    layout-sm="column"
+    layout-align="start center"
+    layout-wrap=""
+  >
+    <button class="linkbutton" ng-click="$ctrl.onPredefinedClick(1, 0)">
+      Вчера
+    </button>
+    <button class="linkbutton" ng-click="$ctrl.onPredefinedClick(0, 0)">
+      Сегодня
+    </button>
+    <button class="linkbutton" ng-click="$ctrl.onPredefinedClick(14, 0)">
+      2 недели
+    </button>
+    <button class="linkbutton" ng-click="$ctrl.onPredefinedClick(0, 1)">
+      Месяц
+    </button>
+    <button class="linkbutton" ng-click="$ctrl.onPredefinedClick(null, null)">
+      Все
+    </button>
+  </section>
+</md-content>
