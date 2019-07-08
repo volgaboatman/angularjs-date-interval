@@ -6,6 +6,4 @@ Some notes:
 
 - Last month button susctract exact month (in requirements 30 days)
 
-- datesChanges fires before update the bindings in parent component (log previous values)
-
 - sometimes datePicker shows as invalid style (with bottom red line)

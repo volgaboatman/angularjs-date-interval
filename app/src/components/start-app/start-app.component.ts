@@ -14,17 +14,20 @@ export class AppComponent {
   private date2: string;
   private changes: string[];
 
-  constructor() {
+  constructor(private $timeout: ng.ITimeoutService) {
     this.date1 = "2019-01-01";
     this.date2 = "2019-09-09";
     this.changes = [];
   }
 
   changeDates() {
-    let logline = `${this.changes.length + 1}: от ${this.date1}  до ${
-      this.date2
-    }`;
-    this.changes.push(logline);
-    console.log(logline);
+    let self = this;
+    this.$timeout(function() {
+      let logline = `${self.changes.length + 1}: от ${self.date1}  до ${
+        self.date2
+      }`;
+      self.changes.push(logline);
+      console.log(logline);
+    }, 1);
   }
 }
