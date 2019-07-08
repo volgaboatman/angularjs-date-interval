@@ -52,14 +52,15 @@ export class DateIntervalComponent {
           if (this.onChange) this.onChange();
         }
       }
-      onPredefinedClick(days: number, months: number) {
-        if (days !== null) {
+      onPredefinedClick(daysFrom: number, monthsFrom: number, daysTo: number) {
+        if (daysFrom !== null) {
           this.pickFrom = moment()
-            .subtract(days, "days")
-            .subtract(months, "months")
+            .subtract(daysFrom, "days")
+            .subtract(monthsFrom, "months")
             .startOf("day")
             .toDate();
           this.pickTo = moment()
+            .subtract(daysTo, "days")
             .endOf("day")
             .toDate();
         } else {
