@@ -15,3 +15,5 @@ Useful links
 - [Replacing $scope.$watch with Lifecycle Hooks](https://www.codelord.net/2016/12/13/replacing-%24scope-dot-%24watch-with-lifecycle-hooks/)
 
 - [Effective Strategies for Avoiding Watches in AngularJS](https://www.accelebrate.com/blog/effective-strategies-avoiding-watches-angularjs/)
+
+- [Разбираемся с системой событий $emit, $broadcast и $on в $scope и \$rootScope Ангуляра](https://makeomatic.ru/blog/2014/10/07/Angular_scope_rootScope/)
