@@ -37,6 +37,6 @@ module MaterialStart {
     .component(AppComponent.componentName, AppComponent.componentConfig)
     .component(
       DateIntervalComponent.componentName,
-      DateIntervalComponent.componentConfig
+      new DateIntervalComponent()
     );
 }
