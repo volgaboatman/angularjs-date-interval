@@ -18,7 +18,7 @@ export class DateIntervalComponent implements OnInit, OnChanges {
   @Input() dateTo: string;
   pickTo: Date;
 
-  @Output() mcChange: () => any;
+  @Output() mcChange: (changes: any) => any;
 
   /*@ngInject*/
   constructor() {}
@@ -52,7 +52,7 @@ export class DateIntervalComponent implements OnInit, OnChanges {
       this.dateFrom = newFrom;
       this.dateTo = newTo;
       if (this.mcChange) {
-        this.mcChange();
+        this.mcChange({ changes: { from: this.dateFrom, to: this.dateTo } });
       }
     }
   }
