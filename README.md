@@ -1,6 +1,10 @@
 # Demo date interval component (Typescript)
 
-Made from [Material Start ES6 Tutorial](https://github.com/angular/material-start/tree/es6-tutorial).
+2 versions
+
+1. systemjs: Baseon on [Material Start ES6 Tutorial](https://github.com/angular/material-start/tree/es6-tutorial).
+
+2. angularjs-typescript-webpack: Baseon on [angularjs-typescript-webpack skeleton](https://github.com/vsternbach/angularjs-typescript-webpack) for [AngularJS](http://angularjs.org/) 1.7, typescript 2.9 and webpack 4.5 Project uses [angular-ts-decorators](https://github.com/vsternbach/angular-ts-decorators) to mimic angular 2+ style development in angularjs environment with typescript and webpack.
 
 Some notes:
 
