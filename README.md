@@ -10,8 +10,6 @@ Some notes:
 
 - Last month button susctract exact month (in requirements 30 days)
 
-- sometimes datePicker shows as invalid style (with bottom red line)
-
 Useful links
 
 - [Dissecting @ < & = bindings in AngularJS](http://blog.krawaller.se/posts/dissecting-bindings-in-angularjs/)
