@@ -1,11 +1,6 @@
 <md-content>
-  <section
-    layout="row"
-    layout-sm="column"
-    layout-align="start center"
-    layout-wrap=""
-  >
-    <md-input-container>
+  <section layout="row">
+    <div>
       <p>c</p>
       <md-datepicker
         md-hide-icons="calendar"
@@ -14,9 +9,8 @@
         md-max-date="$ctrl.pickTo"
         md-placeholder="дата начала"
       ></md-datepicker>
-    </md-input-container>
-
-    <md-input-container>
+    </div>
+    <div>
       <p>по</p>
       <md-datepicker
         md-hide-icons="calendar"
@@ -25,7 +19,7 @@
         md-min-date="$ctrl.pickFrom"
         md-placeholder="дата окончания"
       ></md-datepicker>
-    </md-input-container>
+    </div>
   </section>
   <section
     layout="row"
