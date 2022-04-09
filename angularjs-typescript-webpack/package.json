@@ -56,7 +56,7 @@
     "angular-sanitize": "^1.7.8",
     "angular-ts-decorators": "^3.7.7",
     "eventemitter3": "4.0.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   },
   "scripts": {
     "prestart": "rimraf dist & copyfiles -f src/assets/* dist/",
