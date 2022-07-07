@@ -19,7 +19,7 @@
     "angular-material": "github:angular/bower-material",
     "angular-messages": "^1.7.5",
     "angular-sanitize": "^1.7.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "systemjs": "^5.0.0",
     "typescript": "^3.5.3"
   },
